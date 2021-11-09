@@ -5,4 +5,5 @@ option go_package = "github.com/stumpy1/protobuf_test/service";
 message Hello {
     int32 id = 1;
     string name = 2;
+    string info =3;
 }
