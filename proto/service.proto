@@ -7,3 +7,11 @@ message Hello {
     string name = 2;
     string info = 3;
 }
+
+message HelloReply {
+    string ack = 1;
+}
+
+service Greeter {
+    rpc SayHello (Hello) returns (HelloReply) {}
+}
